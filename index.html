@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,
+    wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+    rel="stylesheet">
+    <title>Звездные войны</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <div class="header-nav">
+                <div class="header-nav-item">
+                    <a class="header-nav-item-link" href="#">Билеты</a>
+                </div>
+                <div class="header-nav-item">
+                    <a class="header-nav-item-link" href="#">О фильме</a>
+                </div>
+                <div class="header-nav-item">
+                    <a class="header-nav-item-link" href="#">Трейлеры</a>
+                </div>
+                <div class="header-nav-item">
+                    <a class="header-nav-item-link" href="#">Отзывы</a>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <h2 class="content-episode">Эпизод IX</h2>
+            <h1 class="content-episode-name">Скайуокер. Восход</h1>
+            <p class="content-episode-text">
+                Фильм завершает невероятную историю семьи Скайуокеров, длящуюся уже более сорока лет, 
+                и обещает дать ответы на все загадки из предыдущих серий. Зрителя ожидают старые и новые герои,
+                уникальные миры, увлекательные путешествия на край Галактики и грандиозный финал фантастической саги
+            </p>
+            <h4 class="content-premiere">Премьера</h4>
+            <h3 class="content-date">19 декабря 2019</h3>
+            <label class="button-block-label">
+                <span class="button-block-label-text">смотреть трейлер</span>
+                <div class="button-block-label-button"></div>
+            </label>
+        </div>
+        <div class="carousel">
+            <h3 class="prev-episode">Предыдущие эпизоды</h3>
+            <div class="carousel-block">
+                <a href="#" class="carousel-block-item episode-4">
+                    <div class="carousel-block-item-title">
+
+                        <h4 class="carousel-block-item-date">1977</h4>
+                        <h3 class="carousel-block-item-episode">
+                            Эпизод IV: <br>
+                            Новая надежда
+                        </h3>
+                    </div>
+                </a>
+                <a href="#" class="carousel-block-item episode-5">
+                    <div class="carousel-block-item-title">
+
+                        <h4 class="carousel-block-item-date">1980</h4>
+                        <h3 class="carousel-block-item-episode">
+                            Эпизод V: <br>
+                            Империя наносит ответный удар
+                        </h3>
+                    </div>
+                </a>
+                <a href="#" class="carousel-block-item episode-6">
+                    <div class="carousel-block-item-title">
+
+                        <h4 class="carousel-block-item-date">1983</h4>
+                        <h3 class="carousel-block-item-episode">
+                            Эпизод VI: <br>
+                            Возвращение джедая
+                        </h3>
+                    </div>
+                </a>
+                <a href="#" class="carousel-block-item episode-1">
+                    <div class="carousel-block-item-title">
+
+                        <h4 class="carousel-block-item-date">1977</h4>
+                        <h3 class="carousel-block-item-episode">
+                            Эпизод IV: <br>
+                            Новая надежда
+                        </h3>
+                    </div>
+                </a>
+                <a href="#" class="carousel-block-item episode-4">
+                    <div class="carousel-block-item-title">
+
+                        <h4 class="carousel-block-item-date">1999</h4>
+                        <h3 class="carousel-block-item-episode">
+                            Эпизод I: <br>
+                            Скрытая угроза
+                        </h3>
+                    </div>
+                </a>
+                <a href="#" class="carousel-block-item episode-5">
+                    <div class="carousel-block-item-title">
+
+                        <h4 class="carousel-block-item-date">1977</h4>
+                        <h3 class="carousel-block-item-episode">
+                            Эпизод IV: <br>
+                            Новая надежда
+                        </h3>
+                    </div>
+                </a>
+                <a href="#" class="carousel-block-item episode-6">
+                    <div class="carousel-block-item-title">
+
+                        <h4 class="carousel-block-item-date">1977</h4>
+                        <h3 class="carousel-block-item-episode">
+                            Эпизод IV: <br>
+                            Новая надежда
+                        </h3>
+                    </div>
+                </a>
+                <a href="#" class="carousel-block-item episode-1">
+                    <div class="carousel-block-item-title">
+
+                        <h4 class="carousel-block-item-date">1977</h4>
+                        <h3 class="carousel-block-item-episode">
+                            Эпизод IV: <br>
+                            Новая надежда
+                        </h3>
+                    </div>
+                </a>
+            </div>  
+            <div class="carousel-buttons">
+                <button type="button" id="prev""></button>
+                <button type="button" id="next"></button>
+            </div>  
+         </div>
+    </div>
+    <div class="modal-tiser">  
+        <div class="modal-tiser-window">
+            <div class="modal-tiser-header">
+                <h3 class="modal-tiser-header-title">Tрейлер</h3>
+                <button class="modal-close">×</button>
+            </div>
+            <div class="modal-tiser-window-video" data-layer="0">
+                <iframe 
+                width="560" height="315" src="https://www.youtube.com/embed/KVRBfWQgyuY" frameborder="0"
+                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+   
+    <script src="js/carousel.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        const option = {
+            wrap: '.carousel',
+            item: '.carousel-block',
+            prev: '#prev',
+            next: '#next',
+            infinity:true,
+            slidesToShow: 4, 
+            deviceWidth: [
+                {
+                    size:1300,
+                    slidesToShow:2,
+                    pers:2,
+                },
+                {
+                    size:1000,
+                    slidesToShow:2,
+                    pers:1,
+                },
+                {
+                    size:768,
+                    slidesToShow:1,
+                    pers:0.5,
+                }
+            ],
+        }
+        const slider = new SliderCarousel(option);
+
+        slider.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.content {
+    margin-top: 90px;
+    color:#fff;
+    width: 70%;
+
+    .content-episode {
+        font-weight: 900;
+        line-height: 100%;
+        @include  adaptiv-font(40, 25)
+    }
+    
+    .content-episode-name {
+        margin-top: 25px;
+        font-weight: 900;
+        font-size: 64px;
+        @include  adaptiv-font(78, 55);
+    }
+
+    .content-episode-text {
+        margin-top: 30px;
+        @include  adaptiv-font(18, 14);
+        line-height: 150%;
+        color: #AFAFAF;
+    }
+    .content-premiere {
+        margin-top: 25px;
+        @include  adaptiv-font(18, 14);
+        line-height: 150%;
+        color: #B02000;
+    }
+    .content-date {
+        margin-top: 25px;
+        @include  adaptiv-font(24, 18);
+        line-height: 150%;
+    }
+    .button-block-label {
+        display: flex;
+        align-items:center;
+        margin-top: 47px;
+        width: 300px;
+        height: 81px;
+        background: linear-gradient(90deg, #FB641A 0%, #FC3309 100%);
+        border-radius: 300px;
+        position: relative;
+        cursor: pointer;
+
+        .button-block-label-text {
+            margin-left: 55px;
+        }
+        
+        .button-block-label-button {
+            width: 81px;
+            height: 81px;
+            box-shadow: 0 0 10px 8px rgba($color:#fff, $alpha: 0.3);
+            background:#fff url(../img/paly.svg) center no-repeat;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+
+        }
+    }
+ }

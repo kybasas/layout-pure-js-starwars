@@ -1,0 +1,31 @@
+@import "nullstyle.scss";
+$maxWidth: 1280;
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: 1440 - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+body {
+    box-sizing: border-box;
+    background:#060304 url(../img/main-bg.png) no-repeat 100% top;
+    font-family: 'Roboto', sans-serif;
+}
+label,button {
+    display: block;
+    cursor: pointer;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+img {
+    display: block;
+}
+@import "header.scss";
+
+@import "content.scss";
+
+@import "carousel.scss";
+
+@import "modal.scss";
